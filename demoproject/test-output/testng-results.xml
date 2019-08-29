@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="71737" started-at="2019-08-29T01:57:45 PDT" finished-at="2019-08-29T01:58:56 PDT">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="71737" started-at="2019-08-29T01:57:45 PDT" finished-at="2019-08-29T01:58:56 PDT">
+      <class name="demoproject.gmail">
+        <test-method status="PASS" signature="startbrowser()[pri:0, instance:demoproject.gmail@6eceb130]" name="startbrowser" is-config="true" duration-ms="9265" started-at="2019-08-29T01:58:10 PDT" finished-at="2019-08-29T01:58:19 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startbrowser -->
+        <test-method status="PASS" signature="testcases()[pri:0, instance:demoproject.gmail@6eceb130]" name="testcases" duration-ms="9628" started-at="2019-08-29T01:58:42 PDT" finished-at="2019-08-29T01:58:51 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcases -->
+        <test-method status="PASS" signature="close()[pri:0, instance:demoproject.gmail@6eceb130]" name="close" is-config="true" duration-ms="2326" started-at="2019-08-29T01:58:52 PDT" finished-at="2019-08-29T01:58:54 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- demoproject.gmail -->
+      <class name="demoproject.scrolldown">
+        <test-method status="PASS" signature="startbrowser()[pri:0, instance:demoproject.scrolldown@706a04ae]" name="startbrowser" is-config="true" duration-ms="12104" started-at="2019-08-29T01:58:19 PDT" finished-at="2019-08-29T01:58:31 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startbrowser -->
+        <test-method status="PASS" signature="testcases()[pri:0, instance:demoproject.scrolldown@706a04ae]" name="testcases" duration-ms="6038" started-at="2019-08-29T01:58:36 PDT" finished-at="2019-08-29T01:58:42 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcases -->
+        <test-method status="PASS" signature="close()[pri:0, instance:demoproject.scrolldown@706a04ae]" name="close" is-config="true" duration-ms="2370" started-at="2019-08-29T01:58:54 PDT" finished-at="2019-08-29T01:58:56 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- demoproject.scrolldown -->
+      <class name="demoproject.facebook">
+        <test-method status="PASS" signature="startbrowser()[pri:0, instance:demoproject.facebook@3578436e]" name="startbrowser" is-config="true" duration-ms="12747" started-at="2019-08-29T01:57:45 PDT" finished-at="2019-08-29T01:57:57 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startbrowser -->
+        <test-method status="PASS" signature="testcases()[pri:0, instance:demoproject.facebook@3578436e]" name="testcases" duration-ms="4594" started-at="2019-08-29T01:58:31 PDT" finished-at="2019-08-29T01:58:36 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcases -->
+        <test-method status="PASS" signature="close()[pri:0, instance:demoproject.facebook@3578436e]" name="close" is-config="true" duration-ms="108" started-at="2019-08-29T01:58:51 PDT" finished-at="2019-08-29T01:58:52 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- demoproject.facebook -->
+      <class name="demoproject.gettitle">
+        <test-method status="PASS" signature="startbrowser()[pri:0, instance:demoproject.gettitle@10a035a0]" name="startbrowser" is-config="true" duration-ms="12320" started-at="2019-08-29T01:57:57 PDT" finished-at="2019-08-29T01:58:10 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startbrowser -->
+        <test-method status="PASS" signature="testcases()[pri:0, instance:demoproject.gettitle@10a035a0]" name="testcases" duration-ms="34" started-at="2019-08-29T01:58:51 PDT" finished-at="2019-08-29T01:58:51 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcases -->
+        <test-method status="PASS" signature="close()[pri:0, instance:demoproject.gettitle@10a035a0]" name="close" is-config="true" duration-ms="147" started-at="2019-08-29T01:58:52 PDT" finished-at="2019-08-29T01:58:52 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- demoproject.gettitle -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
