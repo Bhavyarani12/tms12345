@@ -22,7 +22,7 @@ public class AddTour {
 		//login
 		
 		driver.findElement(By.xpath("//form[@class='form-signin form-horizontal wow fadeIn animated animated']//input[@placeholder='Email']")).sendKeys("admin@phptravels.com");
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 		
 		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("demoadmin");
 		Thread.sleep(1000);

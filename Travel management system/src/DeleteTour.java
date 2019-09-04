@@ -40,7 +40,7 @@ public class DeleteTour {
 		driver.findElement(By.xpath("//form[@class='form-signin form-horizontal wow fadeIn animated animated']//input[@placeholder='Email']")).sendKeys("admin@phptravels.com");
 		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("demoadmin");
 		driver.findElement(By.xpath("//button[@class='btn btn-primary btn-block ladda-button fadeIn animated']")).click();
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 		
 		
 	}
