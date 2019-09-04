@@ -34,9 +34,11 @@ public class EditTour {
 		driver.findElement(By.xpath("//tr[1]//td[1]//div[1]//ins[1]")).click();
 		Thread.sleep(1000);
 		
-		driver.findElement(By.xpath("It might be child of svg/pseudo/comment/iframe from different src. XPath doesn't support for them")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'Spectaculars Of The Nile 3 Nights')]")).click();
 		Thread.sleep(1000);
 
+		driver.findElement(By.xpath("//div[@id='GENERAL']//input[@placeholder='Tour Name']")).sendKeys("Spectaculars Of The Nile 3 Nights  123");
+		Thread.sleep(1000);
 	}
 
 }

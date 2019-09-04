@@ -17,6 +17,7 @@ public class AddTour {
 		
 		driver.get("https://www.phptravels.net/admin/");
 		Thread.sleep(1000);
+		driver.manage().window().maximize();
 		
 		//login
 		
@@ -27,11 +28,11 @@ public class AddTour {
 		Thread.sleep(1000);
 		
 		driver.findElement(By.xpath("//button[@class='btn btn-primary btn-block ladda-button fadeIn animated']")).click();
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 		
 		//Tours
 		
-		driver.findElement(By.xpath("/html[1]/body[1]/div[2]/nav[1]/div[3]/ul[1]/li[9]/a[1]")).click();
+		driver.findElement(By.xpath("//body[contains(@class,'pace-running')]/div[@class='wrapper']/nav[@id='sidebar']/div[@class='social-sidebar']/ul[@id='social-sidebar-menu']/li[9]/a[1]")).click();
 		Thread.sleep(1000);
 		
 		//Add tours
@@ -95,6 +96,18 @@ public class AddTour {
 		
 		
 		driver.findElement(By.xpath("//select[@id='isfeatured']/option[2]")).click();
+		Thread.sleep(1000);
+	
+		driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[10]/div[2]/input[1]")).sendKeys("03/09/2019");
+		Thread.sleep(1000);
+		
+		driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[10]/div[3]/input[1]")).sendKeys("04/09/2019");
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[11]/div[2]/div[1]/div[1]/a[1]/span[1]")).click();
+		Thread.sleep(1000);
+		
+		driver.findElement(By.xpath("//div[contains(text(),'pur, India')]")).click();
 		Thread.sleep(1000);
 		
 		//scroll down

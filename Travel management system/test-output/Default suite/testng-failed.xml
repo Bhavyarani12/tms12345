@@ -5,7 +5,7 @@
     <classes>
       <class name="tms">
         <methods>
-          <include name="testcases"/>
+          <include name="dtms"/>
           <include name="close"/>
           <include name="startbrowser"/>
         </methods>
