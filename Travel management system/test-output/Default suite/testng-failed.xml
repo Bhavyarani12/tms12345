@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tms">
+      <class name="search_car_user">
         <methods>
-          <include name="dtms"/>
-          <include name="close"/>
+          <include name="search_car"/>
           <include name="startbrowser"/>
         </methods>
-      </class> <!-- tms -->
+      </class> <!-- search_car_user -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

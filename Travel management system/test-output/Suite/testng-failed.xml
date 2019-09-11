@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="delete_tours">
+        <methods>
+          <include name="testcases"/>
+          <include name="add_tours"/>
+          <include name="startbrowser"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- delete_tours -->
+      <class name="search_tour">
+        <methods>
+          <include name="close"/>
+          <include name="startbrowser"/>
+          <include name="testcases"/>
+          <include name="search"/>
+        </methods>
+      </class> <!-- search_tour -->
+      <class name="edit_tour">
+        <methods>
+          <include name="add_tours"/>
+          <include name="testcases"/>
+          <include name="close"/>
+          <include name="startbrowser"/>
+        </methods>
+      </class> <!-- edit_tour -->
+      <class name="add_tour">
+        <methods>
+          <include name="startbrowser"/>
+          <include name="testcases"/>
+          <include name="close"/>
+          <include name="add_tours"/>
+        </methods>
+      </class> <!-- add_tour -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

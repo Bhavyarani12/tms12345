@@ -53,154 +53,183 @@ public class tms {
 	driver.findElement(By.xpath("//button[@class='btn btn-primary btn-block ladda-button fadeIn animated']")).click();
 	Thread.sleep(5000);
 	}
-//	@Test(priority=1)
-//	public void add_tours() throws InterruptedException {
-//		
-//	
-//	
-//	driver.findElement(By.xpath("/html[1]/body[1]/div[2]/nav[1]/div[3]/ul[1]/li[9]/a[1]")).click();
-//	Thread.sleep(1000);
 	
 	
-//	//Add tours
-//	
-//	driver.findElement(By.xpath("//a[contains(text(),'Add New')]")).click();
-//	Thread.sleep(1000);
-//	
-//	//General
-//	driver.findElement(By.xpath("//select[@name='tourstatus']")).click();
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//div[@id='GENERAL']//input[@placeholder='Tour Name']")).sendKeys("Hawa Mahal");
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//input[@name='maxadult']")).sendKeys("2");
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//input[@name='adultprice']")).sendKeys("2500");
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//span[@id='childbtn']")).click();
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//input[@name='maxchild']")).sendKeys("1");
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//input[@name='childprice']")).sendKeys("2500");
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//span[@id='infantbtn']")).click();
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//input[@name='maxinfant']")).sendKeys("1");
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//input[@name='infantprice']")).sendKeys("1500");
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//span[@id='adultbtn']")).click();
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//span[@id='childbtn']")).click();
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//span[@id='infant']")).click();
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//select[@name='tourstars']")).sendKeys("3");
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//input[@name='tourdays']")).sendKeys("3");
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//input[@name='tournights']")).sendKeys("2");
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//span[@class='select2-chosen'][contains(text(),'Select')]")).click();
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//div[contains(text(),'Private')]")).click();
-//	Thread.sleep(1000);
-//	
-//	
-//	driver.findElement(By.xpath("//select[@id='isfeatured']/option[2]")).click();
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//input[@placeholder='From']")).click();
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("/html[1]/body[1]/div[3]/div[1]/table[1]/tbody[1]/tr[2]/td[5]")).click();
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//div[contains(@class,'col-md-2')]//input[contains(@placeholder,'To')]")).click();
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//div[@id='s2id_locationlist7']//b")).click();
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//div[@id='select2-drop']//input[contains(@class,'select2-input')]")).sendKeys("Jaipur");
-//	Thread.sleep(10000);
-//	
-//	
-//    driver.findElement(By.xpath("//div[@id='select2-drop']//input[contains(@class,'select2-input')]")).sendKeys(Keys.ENTER);
-//    Thread.sleep(1000);
-//	
-//	
-//	
-//	
-//	
-//	//scroll down
-//
-//	
-//	JavascriptExecutor js11=(JavascriptExecutor)driver;
-//	js11.executeScript("window.scrollBy(0,800)");
-//	System.out.println("scrolled Down");
-//    Thread.sleep(1000);	
-//    
-//	driver.findElement(By.xpath("//select[@name='deposittype']/option[01]")).click();
-//	Thread.sleep(1000);
-//
-//    driver.findElement(By.xpath("//input[@name='depositvalue']")).sendKeys("345.54");
-//	
-//	driver.findElement(By.xpath("//select[@name='taxtype']/option[02]")).click();
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//input[@name='taxvalue']")).sendKeys("2345");
-//	Thread.sleep(1000);
-//	 
-//	driver.findElement(By.xpath("//input[@id='mapaddress']")).sendKeys("Hawa Mahal Rd, Badi Choupad, J.D.A. Market, Pink City, Jaipur, Rajasthan 302002");
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//input[@id='latitude']")).sendKeys("26.9239° N");
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//input[@id='longitude']")).sendKeys("75.8267° E");
-//	Thread.sleep(1000);
-//	
-//	driver.findElement(By.xpath("//button[@id='add']")).click();
-//	Thread.sleep(1000);
-//	}
+	@Test(priority=1)
+	public void add_tours() throws InterruptedException {
+		
+	
+	
+	driver.findElement(By.xpath("/html[1]/body[1]/div[2]/nav[1]/div[3]/ul[1]/li[9]/a[1]")).click();
+   Thread.sleep(1000);
+	
+ 
+	//Add tours
+	
+	driver.findElement(By.xpath("//a[contains(text(),'Add New')]")).click();
+	Thread.sleep(1000);
+	
+	//General
+	driver.findElement(By.xpath("//select[@name='tourstatus']")).click();
+	Thread.sleep(1000);
+	
+	driver.findElement(By.xpath("//div[@id='GENERAL']//input[@placeholder='Tour Name']")).sendKeys("Hawa Mahal");
+	Thread.sleep(1000);
+	
+	driver.findElement(By.xpath("//input[@name='maxadult']")).sendKeys("2");
+	Thread.sleep(1000);
+	
+	driver.findElement(By.xpath("//input[@name='adultprice']")).sendKeys("2500");
+	Thread.sleep(1000);
+	
+	driver.findElement(By.xpath("//span[@id='childbtn']")).click();
+	Thread.sleep(1000);
+	
+	driver.findElement(By.xpath("//input[@name='maxchild']")).sendKeys("1");
+	Thread.sleep(1000);
+	
+	driver.findElement(By.xpath("//input[@name='childprice']")).sendKeys("2500");
+	Thread.sleep(1000);
+	
+	driver.findElement(By.xpath("//span[@id='infantbtn']")).click();
+	Thread.sleep(1000);
+	
+	driver.findElement(By.xpath("//input[@name='maxinfant']")).sendKeys("1");
+	Thread.sleep(1000);
+	
+	driver.findElement(By.xpath("//input[@name='infantprice']")).sendKeys("1500");
+	Thread.sleep(1000);
+	
+	driver.findElement(By.xpath("//span[@id='adultbtn']")).click();
+	Thread.sleep(1000);
+	
+	driver.findElement(By.xpath("//span[@id='childbtn']")).click();
+	Thread.sleep(1000);
+	
+	driver.findElement(By.xpath("//span[@id='infant']")).click();
+	Thread.sleep(1000);
+
+	driver.findElement(By.xpath("//select[@name='tourstars']")).sendKeys("3");
+	Thread.sleep(1000);
+	
+	driver.findElement(By.xpath("//input[@name='tourdays']")).sendKeys("3");
+	Thread.sleep(1000);
+	
+	driver.findElement(By.xpath("//input[@name='tournights']")).sendKeys("2");
+	Thread.sleep(1000);
+	
+	driver.findElement(By.xpath("//span[@class='select2-chosen'][contains(text(),'Select')]")).click();
+	Thread.sleep(1000);
+	
+	driver.findElement(By.xpath("//div[contains(text(),'Private')]")).click();
+	Thread.sleep(1000);
+	
+	
+	
+	//scroll down
+
+
+		JavascriptExecutor js11=(JavascriptExecutor)driver;
+	    js11.executeScript("window.scrollBy(0,600)");
+		System.out.println("scrolled Down");
+	    Thread.sleep(1000);	
+
+	
+	
+    driver.findElement(By.xpath("//input[@name='depositvalue']")).sendKeys("345.54");
+	
+	driver.findElement(By.xpath("//select[@name='taxtype']/option[02]")).click();
+	Thread.sleep(1000);
+	
+	driver.findElement(By.xpath("//input[@name='taxvalue']")).sendKeys("2345");
+	Thread.sleep(1000);
+	 
+	driver.findElement(By.xpath("//input[@id='mapaddress']")).sendKeys("Hawa Mahal Rd, Badi Choupad, J.D.A. Market, Pink City, Jaipur, Rajasthan 302002");
+	Thread.sleep(1000);
+	
+	driver.findElement(By.xpath("//input[@id='latitude']")).sendKeys("26.9239° N");
+	Thread.sleep(1000);
+	
+	driver.findElement(By.xpath("//input[@id='longitude']")).sendKeys("75.8267° E");
+	Thread.sleep(1000);
+	
+	driver.findElement(By.xpath("//button[@id='add']")).click();
+	Thread.sleep(1000);
+	}
 	
 	@Test(priority=2)
-	public void dtms()
-	{
-		WebElement option1=driver.findElement(By.xpath("//tr[2]//td[1]//div[1]//ins[1]"));
+	public void edit_tours() throws InterruptedException {
 		
-					if(option1.isSelected()) 
-		{
-			System.out.println("Checkbox Already Checked OFF");
-		}
-		else
-		{
-			
-			option1.click();
-			System.out.println("checkbox Toggled ON");
-			
-		}
-		driver.findElement(By.xpath("//tr[2]//td[1]//div[1]//ins[1]")).click();
-		driver.findElement(By.xpath("It might be child of svg/pseudo/comment/iframe from different src. XPath doesn't support for them.")).click();
-		driver.switchTo().alert().accept();
+	
+	//Tours
+   driver.findElement(By.xpath("/html[1]/body[1]/div[2]/nav[1]/div[3]/ul[1]/li[9]/a[1]")).click();
+   //tours(in)
+   driver.findElement(By.xpath("//ul[@id='Tours']//a[contains(text(),'Tours')]")).click();
+   //edit
+   driver.findElement(By.xpath("//tr[4]//td[11]//span[1]//a[1]")).click();
+   //tour name clear
+   driver.findElement(By.xpath("//div[@id='GENERAL']//input[@placeholder='Tour Name']")).clear();
+   //new tour name
+   driver.findElement(By.xpath("//div[@id='GENERAL']//input[@placeholder='Tour Name']")).sendKeys("Delhi");
+   
+   JavascriptExecutor js1=(JavascriptExecutor)driver;
+   js1.executeScript("window.scrollBy(0,800)");
+   System.out.println("scrolled Down");
+   Thread.sleep(1000);	
+   
+   //submit
+   driver.findElement(By.xpath("//button[@id='update']")).click();
 	}
+	
+	@Test(priority=3)
+	public void delete_tours() throws InterruptedException {
+		
+	
+	//Tours
+   driver.findElement(By.xpath("//body[contains(@class,'pace-done')]/div[contains(@class,'wrapper')]/nav[@id='sidebar']/div[contains(@class,'social-sidebar')]/ul[@id='social-sidebar-menu']/li[9]/a[1]")).click();
+   //tours(in)
+   driver.findElement(By.xpath("/html[1]/body[1]/div[2]/nav[1]/div[3]/ul[1]/li[9]/ul[1]/li[1]/a[1]")).click();
+   //delete (old and new Delhi city)
+   driver.findElement(By.xpath("//a[@id='33']")).click();
+   //pop-up message
+   driver.switchTo().alert().accept();
+	}
+	
+	@Test(priority=4)
+	public void search() throws InterruptedException
+	{
+		//Tours
+		driver.findElement(By.xpath("/html[1]/body[1]/div[2]/nav[1]/div[3]/ul[1]/li[9]/a[1]")).click();
+		//tours(in)
+		driver.findElement(By.xpath("//ul[@id='Tours']//a[contains(text(),'Tours')]")).click();
+		
+		   JavascriptExecutor js1=(JavascriptExecutor)driver;
+		   js1.executeScript("window.scrollBy(0,800)");
+		   System.out.println("scrolled Down");
+		   Thread.sleep(1000);
+		   
+		   //search
+		   driver.findElement(By.xpath("//a[@class='xcrud-search-toggle btn btn-default']")).click();
+		   //search by name
+		   driver.findElement(By.xpath("//select[@name='column']/option[2]")).click();
+		   //enter tour name
+		   driver.findElement(By.xpath("//input[@name='phrase']")).sendKeys("Big Bus Tour of Dubai");
+		   //click on GO button
+		   driver.findElement(By.xpath("//a[contains(@class,'xcrud-action btn btn-primary')]")).click();
+	}
+	
+	
+	
+	
+	    
+	
+
+		
+	
+	
+	
+	
+}		
 	
 	
 	
@@ -212,11 +241,8 @@ public class tms {
 	
 	
 	
-	@AfterTest()
-	public void close() {
-		driver.close();
-	}
 
-}
+
+
 
 
