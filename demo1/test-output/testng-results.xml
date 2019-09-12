@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="22011" started-at="2019-09-09T12:09:54 IST" finished-at="2019-09-09T12:10:16 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="22011" started-at="2019-09-09T12:09:54 IST" finished-at="2019-09-09T12:10:16 IST">
+      <class name="com.qa.Tests.fb">
+        <test-method status="PASS" signature="startbrowser()[pri:0, instance:com.qa.Tests.fb@1dfe2924]" name="startbrowser" is-config="true" duration-ms="15389" started-at="2019-09-09T12:09:54 IST" finished-at="2019-09-09T12:10:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startbrowser -->
+        <test-method status="PASS" signature="testcases()[pri:0, instance:com.qa.Tests.fb@1dfe2924]" name="testcases" duration-ms="4458" started-at="2019-09-09T12:10:09 IST" finished-at="2019-09-09T12:10:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcases -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.qa.Tests.fb@1dfe2924]" name="close" is-config="true" duration-ms="2121" started-at="2019-09-09T12:10:14 IST" finished-at="2019-09-09T12:10:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.qa.Tests.fb -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
