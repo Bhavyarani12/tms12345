@@ -1,5 +1,7 @@
 package Pages;
 
+import java.awt.print.Book;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -17,15 +19,18 @@ public class HomePage extends TestBase {
 	@FindBy(xpath="//a[contains(text(),'Travelhope Hotels')]")
 	WebElement TravelHopeHotels;
 	
-	@FindBy(xpath="//ul[@id='TravelhopeHotels']//a[contains(text(),'Bookings')]")
-	WebElement Bookings;
+//	@FindBy(xpath="//ul[@id='TravelhopeHotels']//a[contains(text(),'Bookings')]")
+//	WebElement Bookings;
 	
 	@FindBy(xpath="//a[contains(text(),'Travelhope Flights')]")
     WebElement TravelHopeFlights;
 	
-	@FindBy(xpath="//ul[@id='TravelhopeFlights']//a[contains(text(),'Bookings')]")
-	WebElement Bookings1;
-	
+//	@FindBy(xpath="//ul[@id='TravelhopeFlights']//a[contains(text(),'Bookings')]")
+//	WebElement Bookings;
+//	
+	@FindBy(xpath="//body[contains(@class,'pace-done')]/div[@class='wrapper']/nav[@id='sidebar']/div[@class='social-sidebar']/ul[@id='social-sidebar-menu']/li[10]/a[1]")
+	WebElement Cars;
+//	
 	//Initializing the Page Objects
 		public HomePage() {
 			PageFactory.initElements(driver, this);
@@ -44,17 +49,30 @@ public class HomePage extends TestBase {
 			TravelHopeHotels.click();
 			return new HomePage();
 		}
-		public HomePage ClickOnBookings() {
-			Bookings.click();
-			return new HomePage();
-		}
+//		public HomePage ClickOnBookings() {
+//			Bookings.click();
+//			return new HomePage();
+//		}
 		public HomePage ClickOnTravelHopeFlights() {
 			TravelHopeFlights.click();
 			return new HomePage();
 			
-		
-			
 		}
 		
+		public HomePage ClickOnCars() {
+			Cars.click();
+			return new HomePage();
+//			
+//		}
+//		public HomePage ClickOnBookings() {
+//			Bookings.click();
+//			return new HomePage();
+//	}
+//			
+		
+			
+		
+		}
 }
+
 

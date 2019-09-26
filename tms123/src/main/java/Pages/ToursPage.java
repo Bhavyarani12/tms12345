@@ -28,19 +28,19 @@ public class ToursPage extends TestBase  {
     @FindBy(xpath="//span[@id='adultbtn']")
     WebElement Enable;
     
-    @FindBy(xpath="//span[@id='child']")
+    @FindBy(id="childbtn")
     WebElement Disable;
     
-    @FindBy(xpath="//input[@name='maxchild']")
+    @FindBy(xpath="//input[contains(@name,'maxchild')]")
     WebElement Quantity1;
     
-    @FindBy(xpath="//input[@name='childprice']")
+    @FindBy(xpath="//input[contains(@name,'childprice')]")
     WebElement Price1;
     
     @FindBy(xpath="//span[@id='childbtn']")
     WebElement Enable1;
     
-    @FindBy(xpath="//div[@class='wrapper']//tr[4]//td[4]")
+    @FindBy(xpath="//span[@id='infantbtn']")
     WebElement Disable2;
     
     @FindBy(xpath="//input[contains(@name,'maxinfant')]")
@@ -49,7 +49,7 @@ public class ToursPage extends TestBase  {
     @FindBy(xpath="//input[contains(@name,'infantprice')]")
     WebElement Price2;
     
-    @FindBy(xpath="//div[contains(@class,'wrapper')]//tr[4]//td[4]")
+    @FindBy(xpath="//span[@id='infant']")
     WebElement Enable2;
     
     @FindBy(xpath="//select[contains(@name,'tourstars')]/option[3]")
@@ -61,24 +61,24 @@ public class ToursPage extends TestBase  {
     @FindBy(xpath="//input[contains(@name,'tournights')]")
     WebElement Nights;
     
-    @FindBy(xpath="//span[contains(@class,'select2-chosen')][contains(text(),'Select')]")
+    @FindBy(xpath="/html[1]/body[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[9]/div[1]/div[1]/a[1]/span[2]/b[1]")
     WebElement TourType;
     
-    @FindBy(xpath="//div[contains(text(),'Couples')]")
-    WebElement TourTpyeCouples;
+    @FindBy(xpath="//div[contains(text(),'Private')]")
+    WebElement TourTpye1;
     
     @FindBy(xpath="//input[contains(@placeholder,'From')]")
     WebElement From;
-    @FindBy(xpath="//div[3]//tr[5]//td[1]")
+    @FindBy(xpath="//td[contains(@class,'active')][contains(text(),'23')]")
     WebElement From1;
     @FindBy(xpath="//div[contains(@class,'col-md-2')]//input[contains(@placeholder,'To')]")
     WebElement To;
-    @FindBy(xpath="//div[4]//tr[5]//td[2]")
+    @FindBy(xpath="/html[1]/body[1]/div[4]/div[1]/table[1]/tbody[1]/tr[5]/td[4]")
     WebElement To1;    
     
     
    	
-      @FindBy(xpath="//div[@id='s2id_locationlist2']//span[contains(@class,'select2-chosen')][contains(text(),'Enter Location')]")
+      @FindBy(xpath="//div[@id='s2id_locationlist10']//b")
     WebElement Location;
       @FindBy(xpath="//div[@id='select2-drop']//input[contains(@class,'select2-input')]")
       WebElement Location1;
@@ -127,12 +127,16 @@ public class ToursPage extends TestBase  {
     	Thread.sleep(1000);	
     	JavascriptExecutor js3=(JavascriptExecutor)driver;
    		js3.executeScript("window.scrollBy(300,400)");
+   		TourType.click();
+   		Thread.sleep(1000);
+   		TourTpye1.click();
+   		Thread.sleep(1000);
     	
-    	From.click();
+    	From.sendKeys("23/09/2019");
     	Thread.sleep(1000);
         From1.click();
         Thread.sleep(1000);
-        To.click();
+        To.sendKeys("25/09/2019");
     	Thread.sleep(1000);
     	To1.click();
     	Thread.sleep(1000);
