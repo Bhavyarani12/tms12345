@@ -1,21 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20129" started-at="2019-09-26T09:44:21 IST" finished-at="2019-09-26T09:44:41 IST">
+  <suite name="Suite" duration-ms="238522" started-at="2019-09-26T11:00:02 IST" finished-at="2019-09-26T11:04:01 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20129" started-at="2019-09-26T09:44:21 IST" finished-at="2019-09-26T09:44:41 IST">
-      <class name="TestCases.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.LoginPageTest@6ebc05a6]" name="setup" is-config="true" duration-ms="7762" started-at="2019-09-26T09:44:21 IST" finished-at="2019-09-26T09:44:29 IST">
+    <test name="Test" duration-ms="238522" started-at="2019-09-26T11:00:02 IST" finished-at="2019-09-26T11:04:01 IST">
+      <class name="TestCases.ToursPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.ToursPageTest@3d99d22e]" name="setup" is-config="true" duration-ms="18940" started-at="2019-09-26T11:00:44 IST" finished-at="2019-09-26T11:01:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:TestCases.LoginPageTest@6ebc05a6]" name="loginTest" duration-ms="12312" started-at="2019-09-26T09:44:29 IST" finished-at="2019-09-26T09:44:41 IST">
+        <test-method status="PASS" signature="ToursPage()[pri:0, instance:TestCases.ToursPageTest@3d99d22e]" name="ToursPage" duration-ms="44714" started-at="2019-09-26T11:01:03 IST" finished-at="2019-09-26T11:01:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToursPage -->
+      </class> <!-- TestCases.ToursPageTest -->
+      <class name="TestCases.TravelHopeFlightsPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.TravelHopeFlightsPageTest@32709393]" name="setup" is-config="true" duration-ms="28275" started-at="2019-09-26T11:00:02 IST" finished-at="2019-09-26T11:00:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="FlightsPage()[pri:0, instance:TestCases.TravelHopeFlightsPageTest@32709393]" name="FlightsPage" duration-ms="13838" started-at="2019-09-26T11:00:30 IST" finished-at="2019-09-26T11:00:44 IST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at Pages.TravelHopeFlightsPage.FlightsPage(TravelHopeFlightsPage.java:27)
+at TestCases.TravelHopeFlightsPageTest.FlightsPage(TravelHopeFlightsPageTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlightsPage -->
+      </class> <!-- TestCases.TravelHopeFlightsPageTest -->
+      <class name="TestCases.TravelHopeHotelPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.TravelHopeHotelPageTest@3a883ce7]" name="setup" is-config="true" duration-ms="24591" started-at="2019-09-26T11:03:13 IST" finished-at="2019-09-26T11:03:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="HotelsPage()[pri:0, instance:TestCases.TravelHopeHotelPageTest@3a883ce7]" name="HotelsPage" duration-ms="22719" started-at="2019-09-26T11:03:38 IST" finished-at="2019-09-26T11:04:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HotelsPage -->
+      </class> <!-- TestCases.TravelHopeHotelPageTest -->
+      <class name="TestCases.LoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.LoginPageTest@cd2dae5]" name="setup" is-config="true" duration-ms="8940" started-at="2019-09-26T11:02:52 IST" finished-at="2019-09-26T11:03:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:TestCases.LoginPageTest@cd2dae5]" name="loginTest" duration-ms="12501" started-at="2019-09-26T11:03:01 IST" finished-at="2019-09-26T11:03:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
       </class> <!-- TestCases.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="TestCases.CarTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.CarTest@49fc609f]" name="setup" is-config="true" duration-ms="18753" started-at="2019-09-26T11:01:48 IST" finished-at="2019-09-26T11:02:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Cars()[pri:0, instance:TestCases.CarTest@49fc609f]" name="Cars" duration-ms="45132" started-at="2019-09-26T11:02:07 IST" finished-at="2019-09-26T11:02:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cars -->
+      </class> <!-- TestCases.CarTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
